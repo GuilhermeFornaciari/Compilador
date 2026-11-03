@@ -24,10 +24,10 @@ class Block(AstNode):
     def __init__(self):
          super().__init__("Bloco")
 
-class ifNode(AstNode):
+class IfNode(AstNode):
     #possui 2 filhos (sem else) ou 3 filhos (com else). Conficao, verdade e falso
     def __init__(self, condition: AstNode, true_block: AstNode, false_block: AstNode = None):
-         super().__init__("ifNode")
+         super().__init__("IfNode")
          self.children.extend([condition, true_block])
          if false_block is not None:
              self.children.append(false_block)
@@ -41,7 +41,8 @@ class WhileNode(AstNode):
 class ReturnNode(AstNode):
     #possui somente um filho a expressao de retorno
     def __init__(self, expr: AstNode):
-         super().__init__(expr)
+         super().__init__("ReturnNode")
+         self.children.append(expr)
          
          
          
@@ -62,9 +63,17 @@ class RelOp(AstNode):
     #possui 2 filhos o operando da esquerda e da direita
     def __init__(self, op: str, left: AstNode, right: AstNode):
          super().__init__("RelOp", op=op)
-         self.children.extend({left, right})
+         self.children.extend([left, right])
+
+class PrintNode(AstNode):
+    #usado para a preservacao da string de formatacao
+    #possui um vetor de filhos que representam os args de println
+    def __init__(self, fmt_string: str):
+        super().__init__("PrintNode", op=fmt_string)
 
 class CallNode(AstNode):
+    #atributo op guarda o nome da funcao
+    #os filhos sao os argumentos passados na chamada da funcao
     def __init__(self, func_name: str):
          super().__init__("CallNode", op=func_name)
          
