@@ -1,0 +1,14 @@
+--- ERROS SINTATICOS ---
+Erro sintatico na linha 2: fator invalido ';'
+Erro sintatico na linha 3: esperado SEMICOLON
+Erro sintatico na linha 3: esperado SEMICOLON
+Comando invalido na linha 3: 3
+Comando invalido na linha 3: ;
+Erro sintatico na linha 4: fator invalido ';'
+Erro sintatico na linha 5: esperado SEMICOLON
+Erro sintatico na linha 5: fator invalido ';'
+Erro sintatico na linha 6: esperado SEMICOLON
+Erro sintatico na linha 6: esperado FMT_STRING
+Erro sintatico na linha 8: esperado SEMICOLON
+Comando invalido na linha 8: 4
+Comando invalido na linha 8: ;

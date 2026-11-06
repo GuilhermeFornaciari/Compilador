@@ -1,0 +1,31 @@
+
+================================================================================
+Tabela de Simbolos da Funcao: media
+Tipo de retorno: DATA_FLOAT
+================================================================================
+NOME            | TIPO (DataTypes)     | EH PARAM?  | POSICAO    | CHAMADAS DE FUNCAO
+--------------------------------------------------------------------------------
+a               | DATA_FLOAT           | True       | 0          | []
+b               | DATA_FLOAT           | True       | 1          | []
+
+================================================================================
+Tabela de Simbolos da Funcao: maior
+Tipo de retorno: DATA_INT
+================================================================================
+NOME            | TIPO (DataTypes)     | EH PARAM?  | POSICAO    | CHAMADAS DE FUNCAO
+--------------------------------------------------------------------------------
+a               | DATA_INT             | True       | 0          | []
+b               | DATA_INT             | True       | 1          | []
+
+================================================================================
+Tabela de Simbolos da Funcao: main
+Tipo de retorno: DATA_VOID
+================================================================================
+NOME            | TIPO (DataTypes)     | EH PARAM?  | POSICAO    | CHAMADAS DE FUNCAO
+--------------------------------------------------------------------------------
+letra           | DATA_CHAR            | False      | -1         | []
+sinal           | DATA_CHAR            | False      | -1         | []
+traco           | DATA_CHAR            | False      | -1         | []
+m               | DATA_FLOAT           | False      | -1         | []
+n               | DATA_INT             | False      | -1         | []
+r               | DATA_INT             | False      | -1         | []

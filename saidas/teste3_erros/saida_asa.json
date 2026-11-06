@@ -1,0 +1,17 @@
+{
+    "main": {
+        "node_type": "FunctionNode",
+        "op": "main",
+        "children": [
+            {
+                "node_type": "Bloco",
+                "children": [
+                    {
+                        "node_type": "PrintNode",
+                        "op": ")"
+                    }
+                ]
+            }
+        ]
+    }
+}

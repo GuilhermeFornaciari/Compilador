@@ -1,0 +1,97 @@
+{
+    "main": {
+        "node_type": "FunctionNode",
+        "op": "main",
+        "children": [
+            {
+                "node_type": "Bloco",
+                "children": [
+                    {
+                        "node_type": "WhileNode",
+                        "children": [
+                            {
+                                "node_type": "RelOp",
+                                "op": ">",
+                                "children": [
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "x"
+                                    },
+                                    {
+                                        "node_type": "IntconstNode",
+                                        "op": "0",
+                                        "data_type": "DATA_INT"
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "AssignNode",
+                                        "op": "=",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "soma"
+                                            },
+                                            {
+                                                "node_type": "AritOp",
+                                                "op": "+",
+                                                "children": [
+                                                    {
+                                                        "node_type": "IdNode",
+                                                        "op": "soma"
+                                                    },
+                                                    {
+                                                        "node_type": "IdNode",
+                                                        "op": "x"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "node_type": "AssignNode",
+                                        "op": "=",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "x"
+                                            },
+                                            {
+                                                "node_type": "AritOp",
+                                                "op": "-",
+                                                "children": [
+                                                    {
+                                                        "node_type": "IdNode",
+                                                        "op": "x"
+                                                    },
+                                                    {
+                                                        "node_type": "IntconstNode",
+                                                        "op": "1",
+                                                        "data_type": "DATA_INT"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node_type": "PrintNode",
+                        "op": "\"soma = {}\"",
+                        "children": [
+                            {
+                                "node_type": "IdNode",
+                                "op": "soma"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

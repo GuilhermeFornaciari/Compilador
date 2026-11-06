@@ -1,0 +1,14 @@
+
+================================================================================
+Tabela de Simbolos da Funcao: main
+Tipo de retorno: DATA_VOID
+================================================================================
+NOME            | TIPO (DataTypes)     | EH PARAM?  | POSICAO    | CHAMADAS DE FUNCAO
+--------------------------------------------------------------------------------
+a               | DATA_INT             | False      | -1         | []
+b               | DATA_INT             | False      | -1         | []
+c               | DATA_CHAR            | False      | -1         | []
+d               | DATA_CHAR            | False      | -1         | []
+ok              | DATA_INT             | False      | -1         | []
+e               | DATA_INT             | False      | -1         | []
+nunca_chega     | DATA_INT             | False      | -1         | []

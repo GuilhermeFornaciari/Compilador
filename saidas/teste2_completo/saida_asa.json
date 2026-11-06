@@ -1,0 +1,273 @@
+{
+    "media": {
+        "node_type": "FunctionNode",
+        "op": "media",
+        "children": [
+            {
+                "node_type": "Bloco",
+                "children": [
+                    {
+                        "node_type": "ReturnNode",
+                        "children": [
+                            {
+                                "node_type": "AritOp",
+                                "op": "/",
+                                "children": [
+                                    {
+                                        "node_type": "AritOp",
+                                        "op": "+",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "a"
+                                            },
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "b"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "node_type": "FloatconstNode",
+                                        "op": "2.5",
+                                        "data_type": "DATA_FLOAT"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "maior": {
+        "node_type": "FunctionNode",
+        "op": "maior",
+        "children": [
+            {
+                "node_type": "Bloco",
+                "children": [
+                    {
+                        "node_type": "IfNode",
+                        "children": [
+                            {
+                                "node_type": "RelOp",
+                                "op": ">=",
+                                "children": [
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "a"
+                                    },
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "b"
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "ReturnNode",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "a"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "ReturnNode",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "b"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "main": {
+        "node_type": "FunctionNode",
+        "op": "main",
+        "children": [
+            {
+                "node_type": "Bloco",
+                "children": [
+                    {
+                        "node_type": "IfNode",
+                        "children": [
+                            {
+                                "node_type": "RelOp",
+                                "op": "==",
+                                "children": [
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "n"
+                                    },
+                                    {
+                                        "node_type": "IntconstNode",
+                                        "op": "42",
+                                        "data_type": "DATA_INT"
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "PrintNode",
+                                        "op": "\"n vale {} e m vale {}\"",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "n"
+                                            },
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "m"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node_type": "IfNode",
+                        "children": [
+                            {
+                                "node_type": "RelOp",
+                                "op": "!=",
+                                "children": [
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "n"
+                                    },
+                                    {
+                                        "node_type": "IntconstNode",
+                                        "op": "0",
+                                        "data_type": "DATA_INT"
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "PrintNode",
+                                        "op": "\"letras: {} {} {}\"",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "letra"
+                                            },
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "sinal"
+                                            },
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "traco"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node_type": "WhileNode",
+                        "children": [
+                            {
+                                "node_type": "RelOp",
+                                "op": "<",
+                                "children": [
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "r"
+                                    },
+                                    {
+                                        "node_type": "IntconstNode",
+                                        "op": "10",
+                                        "data_type": "DATA_INT"
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "AssignNode",
+                                        "op": "=",
+                                        "children": [
+                                            {
+                                                "node_type": "IdNode",
+                                                "op": "r"
+                                            },
+                                            {
+                                                "node_type": "AritOp",
+                                                "op": "+",
+                                                "children": [
+                                                    {
+                                                        "node_type": "IdNode",
+                                                        "op": "r"
+                                                    },
+                                                    {
+                                                        "node_type": "IntconstNode",
+                                                        "op": "1",
+                                                        "data_type": "DATA_INT"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "node_type": "IfNode",
+                        "children": [
+                            {
+                                "node_type": "RelOp",
+                                "op": "<=",
+                                "children": [
+                                    {
+                                        "node_type": "IdNode",
+                                        "op": "r"
+                                    },
+                                    {
+                                        "node_type": "IntconstNode",
+                                        "op": "10",
+                                        "data_type": "DATA_INT"
+                                    }
+                                ]
+                            },
+                            {
+                                "node_type": "Bloco",
+                                "children": [
+                                    {
+                                        "node_type": "PrintNode",
+                                        "op": "\"fim\""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
