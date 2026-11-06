@@ -12,3 +12,4 @@ Erro sintatico na linha 6: esperado FMT_STRING
 Erro sintatico na linha 8: esperado SEMICOLON
 Comando invalido na linha 8: 4
 Comando invalido na linha 8: ;
+Erro sintatico na linha 11: declaracao ou comando fora de funcao ('let')

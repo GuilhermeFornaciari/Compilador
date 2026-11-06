@@ -8,3 +8,4 @@ fn main ( ) {
     let e : int = 3 @ 4 ;
     let nunca_chega : int = 0 ;
 }
+let global : int = 1;

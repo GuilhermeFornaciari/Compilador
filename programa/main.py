@@ -108,7 +108,6 @@ def main():
         json.dump(asa_dict, f, indent=4, ensure_ascii=False)
         
     print(f"ASA exportada em formato hierarquico (verifique {asa_path}).\n")
-    print("Compilacao da Entrega 2 finalizada com sucesso!")
     return 0
 
 if __name__ == "__main__":

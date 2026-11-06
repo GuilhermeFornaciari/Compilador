@@ -52,7 +52,18 @@ class Parser:
     # regras da gramatica
     def parse_program(self):
         while self.current_token().tipo != "EOF":
-            self.parse_function()
+            if self.current_token().tipo == "FUNCTION":
+                self.parse_function()
+            else:
+                tok = self.current_token()
+                self.syntactic_errors.append(
+                    f"Erro sintatico na linha {tok.n_linha}: declaracao ou comando fora de funcao ('{tok.lexema}')"
+                )
+                while self.current_token().tipo not in ["FUNCTION", "EOF"]:
+                    if self.current_token().tipo == "SEMICOLON":
+                        self.pos += 1
+                        break
+                    self.pos += 1
     
     def parse_function(self):
         self.consume("FUNCTION")

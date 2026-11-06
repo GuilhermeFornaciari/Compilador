@@ -57,7 +57,14 @@ Token(lexema='=', tipo='ASSIGN', n_linha=9, n_col=27)
 Token(lexema='0', tipo='INT_CONST', n_linha=9, n_col=29)
 Token(lexema=';', tipo='SEMICOLON', n_linha=9, n_col=31)
 Token(lexema='}', tipo='RBRACE', n_linha=10, n_col=1)
-Token(lexema='', tipo='EOF', n_linha=11, n_col=1)
+Token(lexema='let', tipo='LET', n_linha=11, n_col=1)
+Token(lexema='global', tipo='ID', n_linha=11, n_col=5)
+Token(lexema=':', tipo='COLON', n_linha=11, n_col=12)
+Token(lexema='int', tipo='INT', n_linha=11, n_col=14)
+Token(lexema='=', tipo='ASSIGN', n_linha=11, n_col=18)
+Token(lexema='1', tipo='INT_CONST', n_linha=11, n_col=20)
+Token(lexema=';', tipo='SEMICOLON', n_linha=11, n_col=21)
+Token(lexema='', tipo='EOF', n_linha=11, n_col=22)
 
 --- ERROS LEXICOS ---
 Erro léxico na linha 2, coluna 19: lexema inválido '12.'
